@@ -11,7 +11,13 @@
     <input id="n1" type="number"> <br/>
 
     Segundo número <br/>
-<input id="n2" type="number"> <br/> <br/>
+<input id="n2" type="number"> <br/>
+
+    Terceiro número <br/>
+<input id="n3" type="number"> <br/>
+
+    Quarto número <br/>
+<input id="n4" type="number"> <br/> <br/>
 
 <button onclick="somar ()"> Somar   </button>
 
@@ -28,20 +34,22 @@ O resultado é <span></span>
 
  var n1= document.querySelector ('#n1')
  var n2= document.querySelector ('#n2')
+ var n3= document.querySelector ('#n3')
+ var n4= document.querySelector ('#n4')
  var resultado= document.querySelector('span')
 
  function somar(){
-   resultado.innerHTML=parseInt(n1.value)+parseInt(n2.value)
+   resultado.innerHTML=parseInt(n1.value)+parseInt(n2.value)+parseInt(n3.value)+parseInt(n4.value)
  }
 
  function subtrair(){
-   resultado.innerHTML=parseInt(n1.value)-parseInt(n2.value)
+   resultado.innerHTML=parseInt(n1.value)-parseInt(n2.value)-parseInt(n3.value)-parseInt(n4.value)
 }
   function dividir(){
-     resultado.innerHTML=parseInt(n1.value)/parseInt(n2.value)
+    resultado.innerHTML=parseInt(n1.value)/parseInt(n2.value)/parseInt(n3.value)/parseInt(n4.value)
 }
   function multiplicar(){
-       resultado.innerHTML=parseInt(n1.value)*parseInt(n2.value)
+    resultado.innerHTML=parseInt(n1.value)*parseInt(n2.value)*parseInt(n3.value)*parseInt(n4.value)
 }
 
  </script>
